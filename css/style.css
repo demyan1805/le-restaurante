@@ -1,0 +1,214 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 70px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  margin: 0 25px;
+  padding-bottom: 20px;
+  font-size: 2em;
+  font-style: italic;
+  color: #ffffff;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar__link:hover {
+  color: #f1ac11;
+  border-bottom: 3px solid #f1ac11;
+  padding-bottom: 17px;
+}
+
+.logo {
+  -webkit-filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+}
+
+.home__item-wrap {
+  position: relative;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
+  overflow: hidden;
+  z-index: 10;
+  border-left: 2px solid #f1ac11;
+  border-right: 2px solid #f1ac11;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.home__item-wrap img {
+  position: absolute;
+  left: -50%;
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
+  height: 100%;
+  z-index: -1;
+}
+
+.home__item-wrap:first-child {
+  border-left: none;
+  overflow: visible;
+  z-index: 0;
+}
+
+.home__item-wrap:last-child {
+  border-right: none;
+  overflow: visible;
+  z-index: 1;
+}
+
+.home__item-wrap:hover {
+  -webkit-box-flex: 2.5;
+      -ms-flex-positive: 2.5;
+          flex-grow: 2.5;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.home__item-wrap:hover .placeholder {
+  opacity: 1;
+  -webkit-transform: translate(0, -5em);
+          transform: translate(0, -5em);
+}
+
+.meat {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
+}
+
+.vegan {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
+}
+
+.secrets {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
+}
+
+.placeholder {
+  background: url("./../../img/element-bg.png") center no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  text-align: center;
+}
+
+.placeholder__title {
+  color: #2b2b2b;
+  font-size: 3em;
+  padding: 10% 20%;
+  margin: 0;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.placeholder__button {
+  min-width: 40%;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 32px;
+}
+
+html {
+  font-size: 8px;
+}
+
+body {
+  background-color: #808080;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 70px;
+  z-index: 100;
+}
+
+button {
+  width: 130px;
+  height: 32px;
+  border: none;
+  border-radius: 2px;
+  background-color: #f1ac11;
+  -webkit-box-shadow: 0 2px 0 0 #b47d00;
+          box-shadow: 0 2px 0 0 #b47d00;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: regular;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

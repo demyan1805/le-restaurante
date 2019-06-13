@@ -1,0 +1,79 @@
+.logo
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25))
+.home
+    display: flex
+    justify-content: space-between
+    height: 100vh
+    &__item-wrap
+        position: relative
+        height: 100%
+        flex-grow: 1
+        flex-shrink: 1
+        transform: skew(-15deg)
+        overflow: hidden
+        z-index: 10
+        border-left: 2px solid $primary
+        border-right: 2px solid $primary
+        transition: all 0.5s ease-in-out
+        img
+            position: absolute
+            left: -50%
+            transform: skew(15deg)
+            // min-width: 200%
+            height: 100%
+            z-index: -1
+        &:first-child
+            border-left: none
+            overflow: visible
+            z-index: 0
+        &:last-child
+            border-right: none
+            overflow: visible
+            z-index: 1
+        &:hover
+            flex-grow: 2.5
+            flex-shrink: 0
+            .placeholder
+                opacity: 1
+                transform: translate(0, -5em)
+        
+        
+
+
+.meat
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: skew(15deg)
+.vegan
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: skew(15deg)
+.secrets
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: skew(15deg)
+
+.placeholder
+    background: url('./../../img/element-bg.png') center no-repeat
+    background-size: contain
+    opacity: 0.5
+    transition: all 0.35s ease-in-out
+    text-align: center
+    // max-width: 372px
+    &__title
+        color: $button-text
+        font-size: 3em
+        padding: 10% 20%
+        margin: 0
+        +bold
+    &__button
+        min-width: 40%
+        border-radius: 5px
+        box-shadow: none
+        margin-bottom: 32px

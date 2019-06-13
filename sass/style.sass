@@ -1,0 +1,30 @@
+@import 'res'
+@import './components/navbar'
+@import './components/home'
+
+html
+    font-size: 8px
+
+body
+    background-color: #808080
+    box-sizing: border-box
+    margin: 0
+    overflow: hidden
+header
+    position: absolute
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 70px
+    z-index: 100
+button
+    width: 130px
+    height: 32px
+    border: none
+    border-radius: 2px
+    background-color: $primary
+    box-shadow: 0 2px 0 0 $shadow
+    color: $button-text
+    text-transform: uppercase
+    +regular
