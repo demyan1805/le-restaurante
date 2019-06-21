@@ -19,6 +19,7 @@
             position: absolute
             left: -50%
             transform: skew(15deg)
+            // object-fit: cover
             // min-width: 200%
             height: 100%
             z-index: -1
@@ -35,7 +36,7 @@
             flex-shrink: 0
             .placeholder
                 opacity: 1
-                transform: translate(0, -5em)
+                // transform: translate(0, -5em)
         
         
 
@@ -65,6 +66,7 @@
     opacity: 0.5
     transition: all 0.35s ease-in-out
     text-align: center
+    transform: scale(1)
     // max-width: 372px
     &__title
         color: $button-text
@@ -77,3 +79,32 @@
         border-radius: 5px
         box-shadow: none
         margin-bottom: 32px
+
+@media (max-width: 860px)
+    .home
+        flex-direction: column
+        &__item-wrap
+            height: auto
+            width: 100%
+            transform: skewY(-15deg)
+            border-bottom: 2px solid $primary
+            border-top: 2px solid $primary
+            border-left: 0
+            border-right: 0
+            &:last-child
+                overflow: hidden
+            img
+                left: 0
+                top: -50%
+                height: auto
+                width: 100%
+                // object-fit: fill
+                transform: skewY(15deg)
+            .meat,
+            .vegan,
+            .secrets
+                transform: skewY(15deg)
+            .placeholder
+                transform: scale(0.7)
+    .logo
+        transform: scale(0.4)

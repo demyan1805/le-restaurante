@@ -1,0 +1,59 @@
+footer
+    display: flex
+    justify-content: center
+    background: url('../../img/footer-bg.jpg') center no-repeat
+    .menu-block
+        text-align: left
+        // flex-grow: 1
+        margin: 80px
+        ul
+            list-style: none
+            padding: 0
+            li
+            .menu-link
+                +regular
+                font-style: italic
+                text-transform: uppercase
+                font-size: 1.5rem
+                font-weight: 400
+                color: #bbbbbb
+                text-decoration: none
+                &:hover
+                    color: #ffffff
+
+    .sign-up-block
+        margin-top: 80px
+        text-align: center
+        input
+            padding: 0 20px
+            margin: 20px
+            margin-top: 40px
+            background: rgba(255, 255, 255, 0.5)
+            height: 4rem
+            // width: 28rem
+            border: none
+            +regular
+            font-style: italic
+            text-transform: uppercase
+            font-size: 1.5rem
+            font-weight: 400
+            color: #ffffff
+            text-decoration: none
+            &[type="button"]
+                width: 130px
+                height: 32px
+                border: none
+                border-radius: 2px
+                background-color: $primary
+                box-shadow: 0 2px 0 0 $shadow
+                color: $button-text
+                text-transform: uppercase
+                +regular
+
+    h2
+        +regular
+        font-style: italic
+        text-transform: uppercase
+        font-size: 2rem
+        font-weight: 400
+        color: #ffffff

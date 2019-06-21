@@ -1,0 +1,122 @@
+.daily-menu
+    text-align: center
+    margin-top: 50px
+    .title
+        +regular
+        font-style: italic
+        font-size: 4rem
+        text-transform: uppercase
+        color: $primary
+.menu-root
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    max-width: 1000px
+    margin: auto
+    .vegan-selector
+        align-self: flex-start
+    .menu-list
+        align-self: flex-start
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: center
+        width: 100%
+        margin-left: auto
+        margin-right: auto
+    .menu-item
+        cursor: pointer
+        display: flex
+        justify-content: space-between
+        width: 408px
+        height: 80px
+        margin: 20px 40px
+        &-preview
+            width: 80px
+            height: 80px
+            margin-right: 20px
+            transition: all 0.2s ease-in-out
+        &-properties
+            flex-grow: 1
+            display: flex
+            flex-direction: column
+            justify-content: center
+            .menu-item-label
+                display: flex
+                .name
+                    +bold
+                    color: $button-text
+                    margin: 0
+                    font-size: 2rem
+                    align-self: center
+                .bottom-dots
+                    border-color: $button-text
+                    margin: 12px 8px
+                .cost
+                    width: 44px
+                    height: 27px
+                    text-align: center
+                    align-self: flex-end
+                    color: $button-text
+                    font-size: 1.5rem
+                    +bold
+                    padding-top: 12px
+                    background: url('./../../img/cost-placeholder.png') center no-repeat
+            .menu-item-allergens
+                display: flex
+                // margin-top: 8px
+                h3, .allergens-list
+                    margin: 0
+                    +regular
+                    color: $description-text
+                    text-transform: uppercase
+                    font-style: italic
+                    font-size: 1.5rem
+                .bottom-dots
+                    border-color: $description-text
+        &:hover
+            .menu-item-preview
+                transform: scale(1.2)
+
+    .dish-details
+        position: relative
+        overflow: hidden
+        margin: 50px
+        .details-content
+            position: absolute
+            left: 0
+            top: 0
+
+            display: flex
+            .dish-description
+                text-align: left
+                padding: 30px
+                .title
+                    +regular
+                    text-transform: uppercase
+                    font-size: 1.5rem
+                    color: $primary
+                    font-style: italic
+                .name
+                    +regular
+                    font-style: italic
+                    text-transform: uppercase
+                    font-size: 3rem
+                    color: $button-text
+                .descr
+                    +regular
+                    font-style: italic
+                    color: $description-text
+                    font-size: 1.5rem
+                .order-btn
+                    +bold
+                    font-style: italic
+                    font-size: 1.5rem
+
+@media (max-width: 860px)
+    .menu-root
+        max-width: 98vw
+    .dish-details
+        img
+            max-width: 98vw
