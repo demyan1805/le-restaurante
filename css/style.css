@@ -29,18 +29,6 @@
   padding-bottom: 17px;
 }
 
-@media (max-width: 860px) {
-  .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 0;
-  }
-}
-
 .logo {
   -webkit-filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
@@ -179,50 +167,6 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   margin-bottom: 32px;
-}
-
-@media (max-width: 860px) {
-  .home {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .home__item-wrap {
-    height: auto;
-    width: 100%;
-    -webkit-transform: skewY(-15deg);
-            transform: skewY(-15deg);
-    border-bottom: 2px solid #f1ac11;
-    border-top: 2px solid #f1ac11;
-    border-left: 0;
-    border-right: 0;
-  }
-  .home__item-wrap:last-child {
-    overflow: hidden;
-  }
-  .home__item-wrap img {
-    left: 0;
-    top: -50%;
-    height: auto;
-    width: 100%;
-    -webkit-transform: skewY(15deg);
-            transform: skewY(15deg);
-  }
-  .home__item-wrap .meat,
-  .home__item-wrap .vegan,
-  .home__item-wrap .secrets {
-    -webkit-transform: skewY(15deg);
-            transform: skewY(15deg);
-  }
-  .home__item-wrap .placeholder {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  .logo {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
-  }
 }
 
 .daily-menu {
@@ -441,15 +385,6 @@
   font-size: 1.5rem;
 }
 
-@media (max-width: 860px) {
-  .menu-root {
-    max-width: 98vw;
-  }
-  .dish-details img {
-    max-width: 98vw;
-  }
-}
-
 .about {
   background: url("../img/about-bg.jpg") center no-repeat;
   padding: 80px;
@@ -635,20 +570,5 @@ button {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-}
-
-@media (max-width: 860px) {
-  header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0;
-    width: auto;
-    height: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -80,31 +80,3 @@
         box-shadow: none
         margin-bottom: 32px
 
-@media (max-width: 860px)
-    .home
-        flex-direction: column
-        &__item-wrap
-            height: auto
-            width: 100%
-            transform: skewY(-15deg)
-            border-bottom: 2px solid $primary
-            border-top: 2px solid $primary
-            border-left: 0
-            border-right: 0
-            &:last-child
-                overflow: hidden
-            img
-                left: 0
-                top: -50%
-                height: auto
-                width: 100%
-                // object-fit: fill
-                transform: skewY(15deg)
-            .meat,
-            .vegan,
-            .secrets
-                transform: skewY(15deg)
-            .placeholder
-                transform: scale(0.7)
-    .logo
-        transform: scale(0.4)
