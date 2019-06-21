@@ -509,7 +509,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("../../img/footer-bg.jpg") center no-repeat;
+  background: url("../img/footer-bg.jpg") center no-repeat;
 }
 
 footer .menu-block {
