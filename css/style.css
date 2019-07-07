@@ -42,6 +42,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .home__item-wrap {
@@ -445,6 +447,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   background: url("../img/footer-bg.jpg") center no-repeat;
+  background-size: cover;
 }
 
 footer .menu-block {
@@ -530,8 +533,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  overflow-x: hidden;
   max-width: 100vw;
+  min-width: 1024px;
 }
 
 header {
@@ -548,6 +551,10 @@ header {
           align-items: center;
   padding: 0 70px;
   z-index: 100;
+}
+
+header .logo {
+  height: 50px;
 }
 
 button {
